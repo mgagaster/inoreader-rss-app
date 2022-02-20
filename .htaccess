@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule index\.html$ 11.php [L]
+RewriteRule quick-world-news-app\.html$ 11.php [L]
+RewriteRule world-news-app\.html$ 11.php [L]
