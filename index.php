@@ -1,15 +1,6 @@
 <?php
 
-ob_start();
-echo date('Y-m-d H:i:s', time() ) . "\n";
-print_r($_SERVER);
-$s=null;
-parse_str($_SERVER['QUERY_STRING'], $s);
-if (empty($s)) echo "No params\n"; else print_r($s);
-echo "---\n";
-$log = ob_get_contents();
-ob_end_clean();
-file_put_contents("server.log", $log, FILE_APPEND);
+
 
 // Query params are: utm_term={keyword}&utm_creative={creative}&utm_campaign={campaignid}&utm_position={adposition}&utm_network={network}&utm_target={target}&utm_placement={placement}&utm_match={matchtype}
 
